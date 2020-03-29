@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'video',
     loadChildren: () => import('./video/video.module').then( m => m.VideoPageModule)
   },
+  {
+    path: 'detalhe-covid',
+    loadChildren: () => import('./detalhe-covid/detalhe-covid.module').then( m => m.DetalheCovidPageModule)
+  },
 
 ];
 
