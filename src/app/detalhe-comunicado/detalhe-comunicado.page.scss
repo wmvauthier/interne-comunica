@@ -18,6 +18,24 @@
     text-align: justified;
 }
 
+.titleNotificationDetails{
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.dataNotificationDetails{
+  color: #ee1b24;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.contentNotificationDetails{
+  color: #000;
+  font-size: 15px;
+  text-align: justified;
+}
+
 ion-content {
   --background: #CCCCCC url("../../assets/imgs/news-paper.png") no-repeat center !important;
   }
