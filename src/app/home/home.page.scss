@@ -11,6 +11,16 @@ ion-card{
   color:#000;
   font-weight: bold;
   text-align: center;
+  float: right;
+  text-align:right;
+  position:relative;
+  margin-top: 2%;
+}
+
+.backButton{
+  float:left;
+  margin-left:5%;
+  border-radius: 1000px;
 }
 
 .sideRedBar{
