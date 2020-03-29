@@ -1,0 +1,226 @@
+ion-content {
+  --background: #CCCCCC url("../../assets/imgs/logo.png") no-repeat center center !important;
+}
+
+.roundedCard{
+  border-radius: 10000px;
+}
+
+.principalTitleToolbar{
+  color:#000;
+  font-weight: bold;
+  text-align: center;
+  position:relative;
+  margin-top: 2%;
+}
+
+.validationField{
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  color:#ee1b24;
+  margin-top:5px;
+  margin-bottom:0px;
+}
+
+.imgBlackWhite {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE */
+  transition: 0.5s;
+}
+
+.imgColorful{
+  -webkit-filter: none;
+  filter: none; /* IE */
+  transition: 0.5s;
+}
+
+.buttonLog{
+  background-color: #ee1b24;
+  color:#f3f3f3;
+  font-weight: bold;
+  border-radius: 30px;
+  max-width:100%;
+  min-width:90%;
+  margin-top:8%;
+  margin-left:20px;
+}
+
+.buttonLog2{
+  margin-bottom:8%;
+}
+
+.labelTitleForms{
+  font-size: 18px;
+  line-height: 35px!important;
+  font-weight: bold!important;
+  color: #EE1B24;
+  font-family: "Source Sans Pro",Arial,Tahoma,sans-serif;
+  margin-bottom: 1%;
+  display: block;
+  margin-left: 6%;
+  margin-top: 6%;
+}
+
+.labelSmallTitleForms{
+  font-size: 14px;
+  font-weight: bold!important;
+  color: #2f2f2f;
+  font-family: "Source Sans Pro",Arial,Tahoma,sans-serif;
+  margin-bottom: 1%;
+  display: block;
+  margin-top: 4%;
+  margin-left: 6%;
+  margin-bottom: 4%;
+}
+
+.formLogin{
+  margin-top:8%;
+  margin-right: 6%;
+  margin-left: 6%;
+}
+
+ion-select, ion-datetime {
+  min-width:92%;
+}
+
+.item-md{
+  padding-left: 16px;
+  padding-right:16px;
+}
+
+ion-label{
+  min-width:19.2px;
+}
+
+ion-input, ion-datetime, ion-select{
+  background-color:#f3f3f3;
+  border-radius: 30px;
+  margin-top:3%;
+  padding-left: 5%;
+}
+
+.buttonLogin{
+  padding: 10px;
+  width: 90%;
+}
+
+.backgroundRed{
+  background-color:#ee1b24!important;
+}
+
+.backgroundWhite{
+  background-color:#fff!important;
+}
+
+.inputWithIcon{
+  margin-left:5%;
+  vertical-align: middle;
+}
+
+.select-icon{
+  margin-right: 5%;
+  position: relative;
+}
+
+.loading-md .spinner-crescent circle {
+  stroke: #ee1b24;
+}
+
+.loading-md .loading-wrapper {
+  border-radius: 2px;
+  max-width: 280px;
+  max-height: 90%;
+  color: #ee1b24;
+  font-weight: bold;
+  font-family: "Source Sans Pro",Arial,Tahoma,sans-serif;
+  background: #fafafa;
+  -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+  padding: 24px;
+}
+
+ion-icon,
+.select-md .select-icon .select-icon-inner{
+  color:#fff;
+  margin-right: 2%;
+  font-size: 25px;
+}
+
+item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom: hidden;
+  -webkit-box-shadow: inset 0 0px 0 0 #32db64;
+  box-shadow: inset 0 0px 0 0 #32db64;
+}
+
+.alert-md [aria-checked=true] .alert-radio-inner {
+  border-color: #787878;
+  background-color:#ee1b24;
+}
+
+.alert-md [aria-checked=true] .alert-checkbox-inner {
+  border-style: solid;
+  border-color:#ee1b24;
+}
+
+.item.item-md .checkbox-md{
+  margin:0;
+}
+
+.checkbox-md .checkbox-icon{
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.checkbox-md .checkbox-checked .checkbox-inner {
+  border-style: solid;
+  border-color:#ee1b24;
+}
+
+
+.radio-md .radio-checked {
+  border-style:solid;
+  border-color: #ee1b24;
+}
+
+.item-radio-checked.item-md ion-label {
+  color: #ee1b24;
+  font-weight: bold;
+}
+
+.radio-md .radio-checked .radio-inner {
+  background-color:#ee1b24;
+}
+
+.alert-md .alert-button,
+.alert-md [aria-checked=true] .alert-radio-label,
+.picker-md .picker-prefix,
+.picker-md .picker-button,
+.picker-md .picker-suffix,
+.picker-md .picker-opt.picker-opt-selected,
+.alert-md [aria-checked=true] .alert-checkbox-label{
+  color: #ee1b24;
+  font-weight: bold;
+}
+
+.list-md .item-input:last-child {
+  border-bottom: hidden;
+}
+
+.label-ios + ion-input .text-input, .label-ios + ion-textarea .text-input, .label-ios + .input + .cloned-input {
+  margin-left: 5px;
+  width: calc(100% - (16px / 2) - 16px);
+}
+
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: #f3f3f3;
+  -webkit-box-shadow: inset 0 -1px 0 0 #f3f3f3;
+  box-shadow: inset 0 -1px 0 0 #f3f3f3;
+}
+
+.item-md.item-block .item-inner {
+  padding-right: 8px;
+  border-bottom: hidden;
+}

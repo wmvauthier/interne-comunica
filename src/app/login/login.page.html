@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="principalTitleToolbar">
+      LOGIN
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card (click)="exibirTipoLogin(1)" [ngClass]="checkBoxLoginInterne?'imgColorful':'imgBlackWhite'"
+          class="buttonLogin backgroundRed roundedCard">
+          <img src="./assets/imgs/interne.png" />
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card (click)="loginGoogle()" [ngClass]="checkBoxLoginGoogle?'imgColorful':'imgBlackWhite'"
+          class="buttonLogin backgroundWhite roundedCard">
+          <img src="./assets/imgs/google.png" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <form *ngIf="exibirLoginAd" class="formLogin">
+
+    <ion-item>
+      <ion-label>
+        <ion-icon name="person-circle"></ion-icon>
+      </ion-label>
+      <ion-input type="text" placeholder="Matricula" class="inputWithIcon">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <ion-icon name="lock-closed"></ion-icon>
+      </ion-label>
+      <ion-input type="password" placeholder="password" class="inputWithIcon"></ion-input>
+    </ion-item>
+
+    <button class="buttonLog" ion-button (click)="loginAD()" expand="full">
+      Login
+    </button>
+
+  </form>
+
+</ion-content>
