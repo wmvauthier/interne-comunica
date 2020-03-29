@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title class="titleToolbar">
+      INTERNE COMUNICA
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,19 +13,43 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card>
-    <img src="../../assets/imgs/video-camera.png">
-    <ion-label class="text3Btn">VÍDEOS</ion-label>
+  <ion-card (click)="go(1)" class="sideRedBar">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/imgs/video-camera.png">
+        </ion-col>
+        <ion-col class="text3Btn">
+          VÍDEOS
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-card>
 
-  <ion-card>
-    <img src="../../assets/imgs/news-paper.png">
-    <ion-label class="text3Btn">COMUNICADOS</ion-label>
+  <ion-card (click)="go(2)" class="sideRedBar">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/imgs/news-paper.png">
+        </ion-col>
+        <ion-col class="text3Btn">
+          COMUNICADOS
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-card>
-  
-  <ion-card>
-    <img src="../../assets/imgs/patient.png">
-    <ion-label class="text3Btn">COVID19</ion-label>
+
+  <ion-card (click)="go(3)" class="sideRedBar">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/imgs/patient.png">
+        </ion-col>
+        <ion-col class="text3Btn">
+          COVID-19
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-card>
 
 </ion-content>

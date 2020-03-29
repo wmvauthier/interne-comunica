@@ -7,15 +7,42 @@ ion-card{
   margin-right: 5%;
 }
 
+.titleToolbar{
+  color:#000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sideRedBar{
+  border-left: 5px solid red;
+}
+
 img{
   height:70px;
-  margin-left:5%;
+  margin-left:25%;
 }
 
 .text3Btn{
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
   margin: 0 auto;
-  width: 50%;
-  border: 3px solid green;
+  text-align:center;
   padding: 10px;
   margin:auto;
+}
+
+.videoCenter{
+  width:100%;
+  position: "relative";
+}
+
+.cardSubtitle{
+  font-style: italic;
+  font-size: 10px;
+  color:#808080
+}
+
+*{
+  font-family: "Source Sans Pro",Arial,Tahoma,sans-serif;
 }
