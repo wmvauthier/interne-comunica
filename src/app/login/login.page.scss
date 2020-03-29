@@ -37,9 +37,12 @@ ion-content {
 }
 
 .buttonLog{
-  background-color: #ee1b24;
-  color:#f3f3f3;
+  background-color: #f3f3f3;
+  color:#ee1b24;
+  border: 1px solid #fff;
   font-weight: bold;
+  font-size:20px;
+  padding: 2%;
   border-radius: 30px;
   max-width:100%;
   min-width:90%;
@@ -94,6 +97,10 @@ ion-label{
   min-width:19.2px;
 }
 
+.transparent{
+  --ion-item-background: none;
+}
+
 ion-input, ion-datetime, ion-select{
   background-color:#f3f3f3;
   border-radius: 30px;
@@ -139,6 +146,15 @@ ion-input, ion-datetime, ion-select{
   -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
   box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
   padding: 24px;
+}
+
+.native-input.sc-ion-input-ios {
+  padding-left: 3%;
+  padding-right: unset;
+  -webkit-padding-start: var(--padding-start);
+  padding-inline-start: var(--padding-start);
+  -webkit-padding-end: var(--padding-end);
+  padding-inline-end: var(--padding-end);
 }
 
 ion-icon,
@@ -223,4 +239,8 @@ item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item
 .item-md.item-block .item-inner {
   padding-right: 8px;
   border-bottom: hidden;
+}
+
+*{
+  font-family: "Source Sans Pro",Arial,Tahoma,sans-serif;
 }

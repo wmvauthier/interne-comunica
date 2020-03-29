@@ -11,6 +11,9 @@ export class DetalheComunicadoPage implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    if (!localStorage.getItem('loginAD') && !localStorage.getItem('loginGoogle')) {
+      this.router.navigateByUrl('/login');
+    }
   }
 
   go(page) {

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public alertController: AlertController) { }
 
   go(page) {
     switch (page) {
@@ -27,6 +28,31 @@ export class HomePage {
       default:
         break;
     }
+  }
+
+  async preLogout() {
+    const alert = await this.alertController.create({
+      header: 'Logout',
+      message: 'Deseja mesmo sair?',
+      buttons: [
+        {
+          text: 'Não',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: (blah) => {
+            
+          }
+        }, {
+          text: 'Sim',
+          handler: () => {
+            localStorage.clear();
+            this.router.navigateByUrl('login');
+          }
+        }
+      ]
+    });
+
+    await alert.present();
   }
 
 }

@@ -18,6 +18,9 @@ export class LoginPage implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    if (localStorage.getItem('loginAD') || localStorage.getItem('loginGoogle')) {
+      this.go(0);
+    }
   }
 
   exibirTipoLogin(id: number) {
@@ -55,10 +58,12 @@ export class LoginPage implements OnInit {
   }
 
   loginGoogle() {
+    localStorage.setItem('loginGoogle', 'true');
     this.go(0);
   }
 
   loginAD() {
+    localStorage.setItem('loginAD', 'true');
     this.go(0);
   }
 
