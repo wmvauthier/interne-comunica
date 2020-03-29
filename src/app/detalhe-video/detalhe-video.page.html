@@ -1,9 +1,40 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>detalhe-video</ion-title>
+    <ion-title class="titleToolbar">
+      DETALHES DO VÍDEO
+    </ion-title>
+    <ion-button (click)="go(1)" color="danger" class="backButton">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="sideRedBar">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="titleNotification">
+          RECEPÇÃO DA CASA 1
+        </ion-col>
+        <ion-col class="dataNotification">
+          23/03/2019
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="contentNotification">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius pariatur dolor facere!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos delectus ab perspiciatis cumque itaque pariatur
+          cupiditate facilis deserunt, fugiat dignissimos modi praesentium optio aliquid placeat mollitia harum,
+          explicabo sapiente eum?
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
 
 </ion-content>

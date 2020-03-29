@@ -32,4 +32,8 @@ export class VideoPage implements OnInit {
     }
   }
 
+  goDetalheVideo(number) {
+    this.router.navigateByUrl('/detalhe-video');
+  }
+
 }
