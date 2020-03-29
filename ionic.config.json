@@ -1,5 +1,7 @@
 {
   "name": "interne-comunica",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
