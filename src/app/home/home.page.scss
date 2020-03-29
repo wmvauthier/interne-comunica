@@ -1,4 +1,21 @@
+ion-content {
+  --background: #CCCCCC url("../../assets/imgs/logo.png") no-repeat center center / cover !important;
+}
+
 ion-card{
   margin-left: 5%;
   margin-right: 5%;
+}
+
+img{
+  height:70px;
+  margin-left:5%;
+}
+
+.text3Btn{
+  margin: 0 auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  margin:auto;
 }
